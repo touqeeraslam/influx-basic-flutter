@@ -1,7 +1,7 @@
 import 'package:http/http.dart';
 import 'dart:convert';
 
-String baseUrl = 'http://optimalfire.com/touqeer/crud-api-test';
+String baseUrl = 'http://optimalfire.com/touqeer/crud-api';
 
 Future<dynamic> loginUser(data) async {
   // make Post  request
@@ -11,7 +11,7 @@ Future<dynamic> loginUser(data) async {
 
 Future<dynamic> register(user) async {
   // make POST request
-  print(baseUrl);
+  print(user);
   Response response = await post(baseUrl +  '/register', body: user);
   return jsonDecode(response.body);
 }

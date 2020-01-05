@@ -53,7 +53,7 @@ Widget build(BuildContext context) {
  
 
   Future<dynamic> registerUser(context) async {
-    Map user = {
+    var user = {
       'email': emailController.text,
       'password': passwordController.text,
       'user_name': userNameController.text
